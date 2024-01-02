@@ -8,9 +8,9 @@
 }
 
 body{
-    background-color: gray;
-
-   
+    background-color: white;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 .container{
@@ -20,14 +20,13 @@ body{
     /* padding-left: 8rem;
     padding-right: 8rem;   */
     padding-top: 1rem;
+    overflow-x: hidden;
 }
 
 .header{
     width: 100%;
     display: grid;
-    justify-self: center;
     grid-template-columns: 40% 60%;
-
 }
 
 .logo{
@@ -43,6 +42,8 @@ body{
     gap: 1rem;
     align-items: center;
     justify-items: right;
+   
+
 
 }
 
@@ -54,23 +55,23 @@ body{
 } 
 
 .nav-light{
-    display: inline;
+    display: block;
     text-decoration: none;
-    /* margin-left: 2rem; */
     padding: 0.5rem 1rem 0.5rem 1rem;
-    border: 1px solid black;
-    border-radius: 1rem;
-    font-family: myfont-bold;
-    font-weight: 800;
+    border: 2px solid #000000;
+    border-radius: 1.3rem;
+    font-family: myfont-extrabold;
     color: #000000;
+    font-size: 1rem;
 }
 
 .nav{
     display: block;
     text-decoration: none;
-    font-family: myfont-bold;
+    font-family: myfont-extrabold;
     font-weight: 800;
     color: #000000;
+    font-size: 1rem;
 }
 
 .header-logo{
@@ -96,7 +97,10 @@ justify-content: left;
 }
 
 .main-image{
+    display: grid;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -119,13 +123,14 @@ justify-content: left;
     padding-top: 1rem;
     padding-bottom: 1rem;
     line-height: 1.1;
+    font-size: 2.5rem;
 }
 
 .main-description{
-    font-weight: 900;
-    /* text-align: justify; */
+    font-family: myfont-bold;
     margin: 0;
     padding-bottom: 2rem;
+    font-size: 1.2rem;
 
 }
 
@@ -133,28 +138,22 @@ justify-content: left;
     margin: 0;
     padding-top: 5rem;
     font-family: myfont-light;
+    font-size: 1.8rem;
 }
 
 .main-button-box{
     display: grid;
-    width: 50%;
-    grid-template-columns: auto auto;
+    width: 100%;
+    grid-template-columns: 50% 50%;
     
 }
 
-.left-button{
-    width: 50%;
-}
-
-.right-button{
-    width: 50%;
-}
-
 .button{
-    font-weight: 900;
-    font-size:medium;
+    display: block;
+    font-family: myfont-extrabold;
     text-decoration: none;
     padding: 0.5rem 2rem 0.5rem 2rem;
+    text-align: center;
     margin-right: 1rem;
 }
 
@@ -167,7 +166,7 @@ justify-content: left;
 
 .light-button{
     color: #000000;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     border-radius: 1.5rem;
 
 }
@@ -186,6 +185,8 @@ span{
     margin-left: 1.5rem;
     padding-top: 1rem;
     vertical-align: bottom;
+    font-family: myfont-light;
+
 }
 
 .dot-blue{
@@ -211,20 +212,19 @@ span{
     margin-bottom: 6rem;
 }
 
-.section-category-box{
-    margin-top: 2rem;
-}
+
 
 .section-title{
     text-align: center;
     font-family: myfont-extrabold;
+    margin-top: 8rem;
 
 }
 
 .section-description{
     text-align: center;
-    font-weight: 900;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+    font-size: 1rem;
 
 }
 
@@ -233,7 +233,7 @@ span{
     display: block;
     margin: auto;
     width: 50%;
-    
+    max-height: 100%;
 }
 
 .icon-title{
@@ -253,10 +253,10 @@ span{
 .category-box{
     /* width: 8rem;
     height: 6rem; */
-    border: 3px solid #78CDD7;
+    display: grid;
+    border: 3px solid #D8E1FF;
     border-radius: 12px;
-    
-
+    grid-template-rows: 60% 40%;
 }
 
 .box-container{
@@ -265,8 +265,14 @@ span{
     gap: 1rem;
 }
 
+.image-box{
+    /* display: grid;
+    align-items: end; */
+}
+
 .image{
     width: 90%;
+    min-width: 125px;
 }
 
 .checked {
@@ -287,6 +293,8 @@ span{
 
   .image-title{
     margin: 0;
+    font-family: myfont-extrabold;
+
   }
 
   .vote-box{
@@ -337,21 +345,20 @@ span{
 .footer-box{
     display: grid;
     grid-template-columns: 50% 50%;
-    justify-content: center;
-    width: 80%;
-    margin: auto;
+    /* justify-content: center; */
+    /* width: 80%; */
+    /* margin: auto; */
 }
 
 .footer-image{
     width: 100%;
     display: grid;
-    justify-content: right;
+    justify-content: center;
 }
 
 
 .foo-image{
-    width: 22rem;
-    height: 20rem;
+    width: 65%;
 }
 
 .foo-button{
@@ -360,21 +367,65 @@ span{
     border: 2px solid #ffffff;
     border-radius: 1.3rem;
     padding: 0.3rem 2rem 0.3rem 2rem;
-    margin-left: 1.5rem;
 }
 
 .footer-button-box{
     margin-top: 2rem;
+    
 }
 
+.footer-description ,li, ul{
+    padding: 0.5rem;
+    color: #ffffff;
+    list-style-type: square;
 
-@media screen and (max-width: 450px) {
+
+}
+
+@media screen and (max-width: 1100px) {
     .container{
-        width: 100vw;
-
-    }
-    .main2-image{
-        width: 100%;
+        width: 95vw;
     }
     
+}
+
+@media screen and (max-width: 600px) {
+    .button{
+        padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    }
+
+    .gallery-container{
+        gap: 0.5rem;
+    }
+
+    .footer-description{
+        font-size: 0.5rem;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .box-container{
+        gap: 0.3rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    .gallery-container{
+        gap: 0.2rem;
+        font-size: 0.8rem;
+    }
+
+    .button{
+        font-size: 0.8rem;
+    }
+
+    .image{
+        min-width: 105px;
+    }
+
+    .category-box{
+        font-size: 0.6rem;
+    }
 }
