@@ -168,6 +168,7 @@ justify-content: left;
     color: #000000;
     border: 1px solid #000000;
     border-radius: 1.5rem;
+    width: 50%;
 
 }
 
@@ -353,7 +354,7 @@ span{
 .footer-image{
     width: 100%;
     display: grid;
-    justify-content: center;
+    justify-items: center;
 }
 
 
