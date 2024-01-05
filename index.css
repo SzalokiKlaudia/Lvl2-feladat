@@ -17,8 +17,6 @@ body{
     background-color: var(--cont-bg-color);
     width: 80vw;
     margin: auto;
-    /* padding-left: 8rem;
-    padding-right: 8rem;   */
     padding-top: 1rem;
     overflow-x: hidden;
 }
@@ -50,7 +48,6 @@ body{
 .nav-button{
     display: grid;
     align-self: center;
-    /* margin-left: 4rem; */
    
 } 
 
@@ -75,8 +72,8 @@ body{
 }
 
 .header-logo{
-display: grid;
-justify-content: left;
+    display: grid;
+    justify-content: left;
 }
 
 .main{
@@ -108,9 +105,7 @@ justify-content: left;
 .main2-image{
     width: 100%;
     float: right;
-    /* padding: 1.5rem; */
     border: 1px none black;
-    /* border-radius: 50%;   */
     text-align: center;
     shape-outside:circle();
 
@@ -266,10 +261,6 @@ span{
     gap: 1rem;
 }
 
-.image-box{
-    /* display: grid;
-    align-items: end; */
-}
 
 .image{
     width: 90%;
