@@ -374,11 +374,26 @@ span{
 
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1070px) {
     .container{
         width: 95vw;
     }
-    
+
+    .header{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .header-logo{
+        grid-area: 1;
+    }
+
+    .header-nav{
+        grid-area: 2;
+        width: 50%;
+    }
+
+   
 }
 
 @media screen and (max-width: 600px) {
