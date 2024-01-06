@@ -73,7 +73,7 @@ body{
 
 .header-logo{
     display: grid;
-    justify-content: left;
+    
 }
 
 .main{
@@ -163,7 +163,7 @@ body{
     color: #000000;
     border: 1px solid #000000;
     border-radius: 1.5rem;
-    width: 50%;
+    max-width: 85%;
 
 }
 
@@ -405,7 +405,6 @@ span{
 
 @media screen and (max-width: 445px) {
     .gallery-container{
-        gap: 0.2rem;
         font-size: 0.8rem;
     }
 
